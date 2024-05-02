@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background: whitesmoke;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 1.6em 2.5em ;
+
+}
+
+.header {
+    position: static;
+    top: 0;
+    right: 0;
+    padding: 1.3em 1.6em;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 99;
+}
+
+.header .head {
+    margin-right: 15em;
+}
+
+.header .head .welcome {
+    color: black;
+    font-size: 1.6em;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.head .account {
+    color: lightslategray;
+    font-size: 1.1em;
+}
+
+.account a {
+    color: lightskyblue;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    margin-left: 6em;
+}
+
+.list li {
+    margin-left: 2em;
+    cursor: pointer;
+}
+
+.list li a {
+    font-size: 1em;
+    color: darkgray;
+
+}
+
+.list li select {
+    font-size: 1em;
+    color: darkgray;
+    margin-right: 1em;
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.header .img {
+    width: 36px;
+    height: 40px;
+    margin-left: 2em;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+}
+
+.form {
+    padding: 1.5em 1.6em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form .details {
+    display: flex;
+    flex-direction: column;
+}
+
+.form form {
+    width: 370px;
+}
+
+form .inputdetails{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .8em;
+
+}
+
+.inputdetails label {
+    color:  gray;
+    font-size: 1.01em;
+    font-weight: 400;
+    margin-bottom: .3em;
+}
+
+.inputdetails input {
+    outline: none;
+    border: 1px solid rgb(159, 159, 230);
+    padding: .8em 1.5em;
+    border-radius: 1.6em;
+    color: lightgrey;
+    font-size: .9em;
+    font-weight: 200;
+    background: transparent;
+}
+
+.inputdetails input::placeholder {
+    color: lightgrey;
+}
+
+.form .remember {
+    display: flex;
+    justify-content: space-between;
+    font-size: .8em;
+}
+
+.form .remember div {
+    display: flex;
+    gap: 4px;
+    accent-color: aqua;
+}
+
+.form .remember a {
+    text-decoration: none;
+    color:  rgb(159, 159, 230);
+}
+
+.form input[type="button"] {
+    width: 100%;
+    outline: none;
+    border: none;
+    color: hsl(0, 0%, 100%);
+    background: rgb(159, 159, 230);
+    font-size: 1.1em;
+    padding: .5em 1em;
+    border-radius: 1.6em;
+    margin-top: 1.3em;
+    cursor: pointer;
+}
+
+.details .span {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    margin: 1.3em 0 1.5em;
+}
+
+.span div {
+    width: 30%;
+    border: 1px solid lightgray;
+}
+
+.span span {
+    font-size: 1em;
+}
+
+.details .icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1em;
+}
+
+.icon .gicon {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    padding: 1.3em 2em;
+    background: transparent;
+    border: 1px solid rgb(159, 159, 230);
+    border-radius: .3em;
+    cursor: pointer;
+}
+
+.gicon img {
+    position: absolute;
+    width: 40%;
+    height: 55%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.icon .fbicon {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    padding: 1.3em 2em;
+    background: transparent;
+    border: 1px solid rgb(159, 159, 230);
+    border-radius: .3em;
+    cursor: pointer;
+}
+
+.fbicon img {
+    position: absolute;
+    width: 53%;
+    color: transparent;
+    height: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.icon .appleicon {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    padding: 1.3em 2em;
+    background: transparent;
+    border: 1px solid rgb(159, 159, 230);
+    border-radius: .3em;
+    cursor: pointer;
+}
+
+.appleicon img {
+    position: absolute;
+    width: 50%;
+    height: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form .im {
+    width: 500px;
+    height: 400px;
+}
+
+.im img {
+    width: 100%;
+    height: 100%;
+}
