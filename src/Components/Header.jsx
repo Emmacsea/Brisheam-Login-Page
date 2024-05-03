@@ -1,12 +1,13 @@
-import houseicon from '../Images/house.png'
+import houseicon from '../Images/home.png'
+import icon from '../Images/Vector.png'
 import style from '../App.module.css'
 const Header = () => {
     return (
         <div className={style.header}>
-            <div className={style.head}>
-                <p className={style.welcome}>Welcome Back!</p>
-                <p className={style.account}>Dont have an account, <a href="">Sign Up</a></p>                
-            </div>
+           <div className={style.ico}>
+            <img src={icon} alt="" />
+
+           </div>
 
             <nav className={style.list}>
                 <li><a href="">Help</a></li>
@@ -20,11 +21,11 @@ const Header = () => {
                 </li>
                 <li><a href="">Sign Up</a></li>
             </nav>
-
             <div className={style.img}>
                 <img src={houseicon} alt="" />
 
             </div>
+
            
         </div>
 

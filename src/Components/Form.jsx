@@ -1,14 +1,18 @@
 import style from '../App.module.css'
-import googlelogo from '../Images/google icon.webp'
-import fblogo from '../Images/facebook-logo-on-transparent-isolated-background-free-vector.jpg'
-import applelogo from '../Images/apple-logo-iphone-clip-art-apple-thumbnail.jpg'
-import imgicon from '../Images/image.png'
+import googlelogo from '../Images/Frame 18.png'
+import fblogo from '../Images/facebook.png'
+import applelogo from '../Images/apple.png'
+import imgicon from '../Images/Image.png'
 
 const Form = () => {
 
     return (
         <div className={style.form}>
             <div className={style.details}>
+                <div className={style.head}>
+                    <p className={style.welcome}>Welcome Back!</p>
+                    <p className={style.account}>Dont have an account, <a href="">Sign Up</a></p>
+                </div>
                 <form action="">
                     <div className={style.inputdetails}>
                         <label htmlFor="">Username</label>
@@ -21,12 +25,17 @@ const Form = () => {
                     </div>
 
                     <div className={style.remember}>
-                        <div>
-                            <input type="radio" />
-                            <label htmlFor="">Remember Me</label>
-                        </div>
 
-                        <a href="">Forget password?</a>
+                        <label className={style.co}> Remeber Me
+                            <input type="radio" />
+                            <span className={style.checkmark}></span>
+
+                        </label>
+
+                        <div className={style.forget}>
+                            <a href="">Forget password?</a>
+
+                        </div>
                     </div>
 
                     <input type="button" value={'Sign in'} />
@@ -54,10 +63,10 @@ const Form = () => {
 
                 </div>
             </div>
-
             <div className={style.im}>
                 <img src={imgicon} alt="" />
             </div>
+
         </div>
     )
 }
